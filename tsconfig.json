@@ -5,7 +5,7 @@
         "sourceMap": true,
         "strictNullChecks": false,
         "module": "esnext",
-        "target": "es5",
+        "target": "es2020",
         "allowJs": false,
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
@@ -13,6 +13,7 @@
         "importHelpers": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
+        "declaration": true,
     },
     "include": [
         "src/*.ts",

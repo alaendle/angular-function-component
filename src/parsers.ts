@@ -3,7 +3,7 @@ import { isDefined, isString, isUndefined } from './type-guards';
 
 /* SELECTOR */
 function parseSelector(configOrSelector, config) {
-  const selector = isDefined(config) ? config.selector : (configOrSelector as string);
+  const selector = isDefined(config) && config !== false ? config.selector : (configOrSelector as string);
   if (isUndefined(selector)) {
     throw Error('You should specify a selector.');
   }
